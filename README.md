@@ -3,5 +3,5 @@
 ## Tools:
 HTML5, CSS3 & JS (ES6)
 
-# LIVE:
+## LIVE:
 https://webdevchandan.github.io/sudoko/
