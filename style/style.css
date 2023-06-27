@@ -1,0 +1,136 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  body {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: #e0eef5;
+  }
+
+  .container {
+      height: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin: 5px 10px;
+  }
+
+  .container div:first-child {
+      margin-bottom: 10px;
+      color: #fff;
+  }
+
+  div:first-child h3 {
+      margin-bottom: 10px;
+  }
+
+  input:not(#pg_size) {
+      height: 60px;
+      width: 60px;
+      text-align: center;
+      font-size: 1.8rem;
+      background: linear-gradient(180deg, #5050f5f5, #2d2d2d);
+      color: #fff;
+      border: 0.1px solid #000000ab;
+      outline: none;
+  }
+
+  #pg_size {
+      height: 35px;
+      width: 75px;
+      font-size: 1.4rem;
+      outline: none;
+      text-align: center;
+      border: none;
+      border: 1px solid #494abc;
+      border-radius: 5px;
+      box-shadow: 0px 1px 7px #4a4df3;
+  }
+
+  button:not(.checkBtn) {
+      font-size: 1.2rem;
+      padding: 5px 15px;
+      background-color: rgba(41, 41, 243, 0.815);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+  }
+
+  #playGround {
+      text-align: center;
+  }
+
+  .checkBtn {
+      border: none;
+      border-radius: 4px;
+      margin-top: 20px;
+      background: #1b1b1beb;
+      cursor: pointer;
+      padding: 10px 10px;
+      color: #fff;
+      padding: 10px;
+      font-size: 1.0rem;
+  }
+
+  .show_result {
+      position: absolute;
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-radius: 5px;
+      /* background: linear-gradient(175deg, #4CAF50, #cddc3900); */
+      box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.5);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s;
+  }
+
+  .hide {
+      top: 35%;
+      opacity: 0;
+      pointer-events: none;
+  }
+
+  .resultBox {
+      padding: 20px 10px;
+  }
+
+  .resultBox h2 {
+      color: #e7e7e7;
+  }
+
+  .message {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+  }
+
+  .cross {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 600;
+      cursor: pointer;
+  }
+
+  .cross::after {
+      content: "X";
+  }

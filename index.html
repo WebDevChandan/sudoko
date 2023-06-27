@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDOKO GAME</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>SUDOKO</h1>
+        <div>
+            <h3>Enter PlayGround Size:</h3>
+            <input type="text" id="pg_size" autofocus>
+            <button id="crt_pg">Create</button>
+        </div>
+
+        <div id="playGround"></div>
+
+        <div class="show_result hide">
+            <div class="cross"></div>
+            <div class="resultBox">
+                <h2>Result:</h2>
+                <!-- <p class="message succ_msg">Correct</p> -->
+                <!-- <p class="message failed_msg">Failed</p> -->
+            </div>
+
+        </div>
+        <script src="js/main.js"></script>
+    </div>  
+</body>
+
+</html>
