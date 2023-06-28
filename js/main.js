@@ -58,10 +58,10 @@ const createPlayground = (size) => {
 const createPG = () => {
     let size = strToNum(pg_size.value);
 
-    if (size && size < 11 && size > 1)
+    if (size && (screen.width >= 768 ? (size < 11) : (size <= 5)) && size > 1)
         createPlayground(size);
     else
-        return alert("Enter Valid Number Between 1 to 5");
+        return alert(`Enter Valid Number Between 1 to ${screen.width >= 768 ? 10 : 5 }`);
 }
 
 const makDefaultValUniq = (size) => {
@@ -213,7 +213,7 @@ const showResult = (size) => {
     allInputValues = [];
 
     if (!checkValidAllValues())
-        return alert("All values should be Number");
+        return alert("All boxes should be filled with number");
 
     setplayGroundArrVals(size ** 2);
 
@@ -248,6 +248,7 @@ const showResult = (size) => {
 
 const togglePopUp = (result) => {
     rsltBx.removeChild(rsltBx.lastChild);
+
     const msgHTML = `<p class="message">${result}</p>`;
     rsltBx.insertAdjacentHTML("beforeend", msgHTML);
 
