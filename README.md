@@ -1,7 +1,7 @@
 <h1> SUDOKO GAME </h1>
 
 <p align="center">
-![Sudoko Game](image.png)
+  <img src="image.png" alt="Sudoko Game" style="display: block; margin: 0 auto;" />
 </p>
 
 ## Tools:
