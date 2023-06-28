@@ -61,7 +61,7 @@ const createPG = () => {
     if (size && (screen.width >= 768 ? (size < 11) : (size <= 5)) && size > 1)
         createPlayground(size);
     else
-        return alert(`Enter Valid Number Between 1 to ${screen.width >= 768 ? 10 : 5 }`);
+        return alert(`Enter Valid Number Between 1 to ${screen.width >= 768 ? 11 : 6 }`);
 }
 
 const makDefaultValUniq = (size) => {
