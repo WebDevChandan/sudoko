@@ -213,7 +213,7 @@ const showResult = (size) => {
     allInputValues = [];
 
     if (!checkValidAllValues())
-        return alert("All boxes should be filled with number");
+        return alert("All boxes should be filled with numbers");
 
     setplayGroundArrVals(size ** 2);
 
